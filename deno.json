@@ -1,0 +1,17 @@
+{
+  "tasks": {
+    "dev": "deno run -A npm:vite"
+  },
+  "compilerOptions": {
+    "lib": ["dom", "esnext", "deno.window"]
+  },
+  "imports": {
+    "echarts-comp": "./src/deps/echarts-comp.ts",
+    "cpcall": "./src/deps/cpcall.ts",
+    "echarts": "https://esm.sh/echarts@5?bundle",
+    "react": "https://esm.sh/react@18",
+    "react-dom/": "https://esm.sh/react-dom@18/",
+    "react-router-dom": "https://esm.sh/react-router-dom@6"
+  },
+  "nodeModulesDir": true
+}
