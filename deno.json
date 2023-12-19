@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "dev": "deno run -A npm:vite"
+    "dev": "deno run -A npm:vite",
+    "install": "deno cache ./src/main.ts && deno vendor npm:echarts-comp"
   },
   "compilerOptions": {
     "lib": ["dom", "esnext", "deno.window"]

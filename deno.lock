@@ -3,7 +3,8 @@
   "packages": {
     "specifiers": {
       "npm:@types/node": "npm:@types/node@18.16.19",
-      "npm:vite": "npm:vite@5.0.10"
+      "npm:vite": "npm:vite@5.0.10",
+      "npm:vite@5": "npm:vite@5.0.10"
     },
     "npm": {
       "@esbuild/android-arm64@0.19.9": {
@@ -232,8 +233,28 @@
     }
   },
   "redirects": {
-    "https://esm.sh/cpcall@0.0.x": "https://esm.sh/cpcall@0.0.2",
-    "https://esm.sh/cpcall@0.0.x/web": "https://esm.sh/cpcall@0.0.2/web"
+    "https://esm.sh/cpcall@0.0": "https://esm.sh/cpcall@0.0.2",
+    "https://esm.sh/cpcall@0.0/web": "https://esm.sh/cpcall@0.0.2/web",
+    "https://esm.sh/react-dom@18/client": "https://esm.sh/react-dom@18.2.0/client",
+    "https://esm.sh/react-router-dom@6": "https://esm.sh/react-router-dom@6.21.0",
+    "https://esm.sh/react@18": "https://esm.sh/react@18.2.0",
+    "https://esm.sh/v128/@types/react@~18.2/index.d.ts": "https://esm.sh/v128/@types/react@18.2.38/index.d.ts",
+    "https://esm.sh/v135/@types/react-dom@~18.2/client~.d.ts": "https://esm.sh/v135/@types/react-dom@18.2.18/client~.d.ts"
   },
-  "remote": {}
+  "remote": {
+    "https://esm.sh/cpcall@0.0.2": "a25b506c9f1138a299be06c0f6604cb156653d9b0b8f70dee43e2cabece0458c",
+    "https://esm.sh/cpcall@0.0.2/web": "991f5216c6c45d03cfe1fc2c2cc846d790a2cd177105edb75be34acaf815fc6b",
+    "https://esm.sh/react-dom@18.2.0/client": "391c0483ce063105b7d0422c653da70d52ac5f4efa02b0873ce8b70c4dc9ff61",
+    "https://esm.sh/react-router-dom@6.21.0": "b288ba44ff543b54af147976ec2fd7a851f6a99349c97d0db7c9abdfebe7eff0",
+    "https://esm.sh/react@18.2.0": "8950a34a030620fce8349d6bd3913b3bdb186c5ec7968fa5ba4d054e22d78e6c",
+    "https://esm.sh/stable/react@18.2.0/denonext/react.mjs": "3c4f23bcfc53b256fcfaf6f834fa9f584c3bb7be667b2682c6cb6ba8ef88f8e6",
+    "https://esm.sh/v135/@remix-run/router@1.14.0/denonext/router.mjs": "1d7f1617cf71d3941b2e6809df286dc043f00c1abbd86a4bcce1250cb9273e17",
+    "https://esm.sh/v135/cpcall@0.0.2/denonext/cpcall.mjs": "c88bbd6a9cabca8a983db8dcbfaf08030ed4f1f68b1402d2723e815c6743dbc4",
+    "https://esm.sh/v135/cpcall@0.0.2/denonext/web.js": "a82cf4b63a53906b3cfb27af71804e0fdffd6de410207a88fa98d4684d898b48",
+    "https://esm.sh/v135/react-dom@18.2.0/denonext/client.js": "67082d736d11d0d288a4d10f260ab19cbf556c010b2d057088b0b4a5d10338a5",
+    "https://esm.sh/v135/react-dom@18.2.0/denonext/react-dom.mjs": "8191fc377ea7083cca5640699c4abd75de033089eb932799e29aa04bb136838f",
+    "https://esm.sh/v135/react-router-dom@6.21.0/denonext/react-router-dom.mjs": "8aee20c3d5320bd73fee33835d987276a2f8921ada03e1ce548a9059cc8f619b",
+    "https://esm.sh/v135/react-router@6.21.0/denonext/react-router.mjs": "2033523c9b9a8d261415892b96fcc4332fd7746809efe0acfd483d2d908c3c56",
+    "https://esm.sh/v135/scheduler@0.23.0/denonext/scheduler.mjs": "cdbc6d2823e2c6fffcb14501146ff2602a38c48d3c9dd9268f308e833ede2b49"
+  }
 }

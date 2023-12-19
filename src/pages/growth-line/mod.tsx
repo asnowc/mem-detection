@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { Echarts, EChartsOption } from "echarts-comp";
 import { WebSocketCpc } from "cpcall";
 console.log(WebSocketCpc);
@@ -38,11 +38,15 @@ function mockData(name: string): MemoryData {
     rss: randomInt(0, 100),
   };
 }
-
+async function getData(): Promise<MemoryData[]> {
+  const resp = await fetch("/aa.json");
+  return resp.json();
+}
 export default function App() {
-  const option = useMemo(
-    () => createData([mockData("1"), mockData("2"), mockData("3"), mockData("4"), mockData("5"), mockData("6")]),
-    []
-  );
+  const [data, setData] = useState<MemoryData[]>([]);
+  useMemo(() => {
+    getData().then((data) => setData(data));
+  }, []);
+  const option = useMemo(() => createData(data), [data]);
   return <Echarts option={option} style={{ height: 400 }} />;
 }

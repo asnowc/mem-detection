@@ -9,6 +9,7 @@ export default {
   resolve: {
     alias: transDenoImports(denoJson.imports, dir),
   },
+  publicDir: "src/public",
 } as UserConfig;
 
 function transDenoImports(imports: Record<string, string>, base: string) {
